@@ -110,7 +110,7 @@ input, button {
 
 @media (max-width: 376px) {
   .footer {
-    margin-bottom: 11px;
+    margin-bottom: auto;
   }
 }
 .no-webp .wrapper {
