@@ -1,0 +1,10 @@
+.header{
+  &__inner{
+    flex-grow: 1;
+    max-width: 342px;
+    margin: 0 auto;
+  }
+  &__cross {
+    margin-top: 72px;
+  }
+}

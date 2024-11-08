@@ -1,0 +1,15 @@
+@use 'constants' as *;
+@use 'fonts';
+@use 'resetDefaultStyles';
+
+@use 'components/header';
+@use 'components/footer';
+@use 'langPage/index';
+@use 'langPage/lang-de';
+@use 'langPage/lang-es';
+@use 'langPage/lang-fr';
+@use 'langPage/lang-ja';
+@use 'langPage/lang-pt';
+
+@use 'global';
+@use 'media';
