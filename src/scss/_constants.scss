@@ -1,29 +1,20 @@
-// %SF-Black {
-//   font-family: 'SFProDisplay-Black';
-//   font-weight: 800;
-// }
-// %SF-Bold {
-//   font-family: 'SFProDisplay-Bold';
-//   font-weight: 700;
-// }
-// %SF-Regular {
-//   font-family: 'SFProDisplay-Regular';
-//   font-weight: 400;
-// }
-// %SF-Semibold {
-//   font-family: 'SFProDisplay-Semibold';
-//   font-weight: 600;
-// }
+$system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
 %SF-Black {
+  font-family: $system-font;
   font-weight: 800;
 }
 %SF-Bold {
+  font-family: $system-font;
   font-weight: 700;
 }
 %SF-Regular {
+  font-family: $system-font;
   font-weight: 400;
 }
 %SF-Semibold {
+  font-family: $system-font;
   font-weight: 600;
 }
+
 $default: #FFFFFF;

@@ -1,18 +1,10 @@
 .wrapper.lang_ja {
   .bunner {
-    &__content {
-      @media (max-width: 375px) and (min-height: 667px) {
-        margin-top: 44px;
-      }
+    margin-bottom: 18px;
 
-      @media (min-width: 375px) and (min-height: 812px) {
-        margin-top: 145px;
-      }
-
-      @media (max-width: 428px) and (min-height: 926px),
-             (max-width: 430px) and (min-height: 932px) {
-        margin-top: 210px;
-      }
+    @media (min-width: 375px) and (min-height: 812px),
+        (max-width: 430px) and (min-height: 932px) {
+      margin-bottom: 42px;
     }
     & .item__bestOffer,& .item-container__subtitle {
       font-size: 11px;

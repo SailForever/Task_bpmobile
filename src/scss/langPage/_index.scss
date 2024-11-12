@@ -10,6 +10,10 @@
   background-position: top;
 
   & .bunner{
+    display: flex;
+    flex-grow: 1;
+    margin-bottom: 20px;
+
     &__inner {
       flex-grow: 1;
       max-width: 342px;
@@ -19,7 +23,8 @@
     &__content {
       display: flex;
       flex-direction: column;
-      margin-top: 151px;
+      justify-content: flex-end;
+      height: 100%;
     }
 
     &__title {

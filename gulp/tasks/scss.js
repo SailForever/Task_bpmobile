@@ -14,7 +14,6 @@ export const scss=()=>{
       outputStyle: 'expanded'
     }))
     .pipe(app.plugins.replace(/@img\//g, '../img/'))
-    .pipe(app.plugins.replace(/@fonts\//g, '../fonts/'))
     .pipe(webpcss(
       {
         webpClass:".webp",
