@@ -1,46 +1,15 @@
 .wrapper .bunner__title, .wrapper .bunner__selector .item .item__bestOffer {
-  font-family: "SFProDisplay-Bold";
   font-weight: 700;
 }
 
 body {
-  font-family: "SFProDisplay-Regular";
   font-weight: 400;
 }
 
 .wrapper .bunner__selector .item .item-container__title, .btn.btn-continue {
-  font-family: "SFProDisplay-Semibold";
   font-weight: 600;
 }
 
-@font-face {
-  font-family: "SFProDisplay-Black";
-  src: url("../fonts/SFProDisplay-Black.woff2") format("woff2"), url("../fonts/SFProDisplay-Black.woff") format("woff");
-  font-weight: normal;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "SFProDisplay-Bold";
-  src: url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff");
-  font-weight: normal;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "SFProDisplay-Regular";
-  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
-  font-weight: normal;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "SFProDisplay-Semibold";
-  src: url("../fonts/SFProDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFProDisplay-Semibold.woff") format("woff");
-  font-weight: normal;
-  font-display: swap;
-  font-style: normal;
-}
 html {
   box-sizing: border-box;
 }
@@ -360,6 +329,7 @@ input, button {
 }
 
 body {
+  font-family: -apple-system, sans-serif;
   display: flex;
   font-size: 16px;
   color: #FFFFFF;
