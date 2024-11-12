@@ -19,7 +19,7 @@ import { server } from "./gulp/tasks/server.js";
 import { scss } from "./gulp/tasks/scss.js";
 import { js } from "./gulp/tasks/js.js";
 import { images } from "./gulp/tasks/images.js";
-import { fonts } from "./gulp/tasks/fonts.js";
+// import { fonts } from "./gulp/tasks/fonts.js";
 import { lang } from "./gulp/tasks/lang.js";
 
 // наблюдатель за изменениями в файлах
@@ -31,11 +31,12 @@ function watcher(){
 }
 
 // основные задачи
-const mainTasks=gulp.series(fonts, lang, gulp.parallel(html, scss, js, images));
+// const mainTasks=gulp.series(fonts, lang, gulp.parallel(html, scss, js, images));
+const mainTasks=gulp.series(lang, gulp.parallel(html, scss, js, images));
 
 // построение сценариев выполнения задач
 const dev=gulp.series(reset, mainTasks,gulp.parallel(watcher, server));
 
 // выполнение сценария по умолчанию
 gulp.task('default', dev);
-gulp.task('fonts', fonts);
+// gulp.task('fonts', fonts);

@@ -1,6 +1,7 @@
 @use 'constants' as *;
 
 body {
+  font-family: -apple-system, sans-serif;
   @extend %SF-Regular;
   display: flex;
   font-size: 16px;
