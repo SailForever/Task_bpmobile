@@ -34,11 +34,27 @@ document.addEventListener("DOMContentLoaded", function () {
       const key = el.dataset.lang;
       if (data[key]) el.innerHTML = data[key];
     });
+  
+    // Заменяем {{price}} на соответствующие значения для разных классов
+    const priceMapping = {
+      "yearly": "$39.99",
+      "yearly-week": "$0.48",
+      "weekly-week": "$6.99"
+    };
 
+    document.querySelectorAll(".yearly, .yearly-week, .weekly-week").forEach(el => {
+      // Проверяем, какой класс присутствует, и заменяем
+      for (const className in priceMapping) {
+        if (el.classList.contains(className)) {
+          el.innerHTML = el.innerHTML.replace(/{{price}}/g, priceMapping[className]);
+        }
+      }
+    });
+    
+    // Применяем язык и стили
     document.documentElement.lang = language;
     document.querySelector(".wrapper").classList.add(`lang_${language}`);
   }
-
   // Загружаем файл перевода на основе параметра языка
   loadLanguageFile(lang);
 
